@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { Section } from "shared/types";
 import { animations } from "shared/utils";
+import * as Application from "../Application";
 import "./styles.scss";
 
 function Stats() {
@@ -17,7 +18,10 @@ function Stats() {
           и прибыльными методами мы гарантируем пассивный доход нашим
           участникам, а взамен оставляем себе комиссию за услуги.
         </div>
-        <Link to='application' className='stats__content__button block_bg'>
+        <Link
+          to={Application.sectionData.id}
+          className='stats__content__button block_bg'
+        >
           Подать заявку
         </Link>
       </div>
