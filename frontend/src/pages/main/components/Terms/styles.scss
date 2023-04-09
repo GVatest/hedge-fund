@@ -1,0 +1,61 @@
+.terms {
+  width: 100%;
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+    @include respond(phone) {
+      gap: 2.5rem;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    min-width: 35rem;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    min-height: 40rem;
+    max-width: 50rem;
+
+    padding: 0 2rem;
+
+    z-index: 1;
+
+    @include respond(phone) {
+      min-width: 30rem;
+    }
+
+    &__art {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+
+      width: 23rem;
+
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
+    &__percent {
+      font-size: 9rem;
+      position: relative;
+      margin-top: 2rem;
+    }
+
+    &__term {
+      font-size: $headings-font-size;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+
+  padding: 1.5rem 2rem;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    opacity: 0.6;
+
+    width: 100%;
+
+    font-size: 2.3rem;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: all 0.1s linear;
+
+    &.active {
+      opacity: 1;
+    }
+
+    &:hover {
+      transform: scale(103%);
+      opacity: 1;
+    }
+
+    img {
+      width: 3.4rem;
+      height: 3.4rem;
+    }
+  }
+}

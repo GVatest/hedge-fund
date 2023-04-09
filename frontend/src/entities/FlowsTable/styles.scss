@@ -1,0 +1,43 @@
+.flows_table {
+  width: 100%;
+  overflow-y: scroll;
+
+  border-spacing: 2rem;
+
+  padding: 0 1rem;
+
+  &__item {
+    font-size: $default-font-size;
+
+    @include respond(phone) {
+      font-size: 1.3rem;
+    }
+
+    &__id {
+      span {
+        padding: 0.5rem 1.5rem;
+      }
+    }
+
+    img {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+
+    th {
+      text-align: left;
+    }
+
+    &__date {
+      text-align: right !important;
+    }
+  }
+
+  &__loader {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

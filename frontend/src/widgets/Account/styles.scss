@@ -1,0 +1,42 @@
+.account {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.6rem;
+
+  font-size: $middle-font-size;
+
+  overflow: hidden;
+
+  padding: 1.5rem 2rem;
+  margin-bottom: 20px;
+
+  &__loader {
+    width: 100%;
+    height: 33.35rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__ellipse {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 355px;
+    z-index: -1;
+    transform: translate(35%, 25%);
+
+    filter: blur(2px);
+  }
+}

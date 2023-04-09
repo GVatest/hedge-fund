@@ -1,0 +1,62 @@
+.login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  width: 100%;
+  height: 33.35rem;
+
+  &__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+
+    font-size: $default-font-size;
+
+    input {
+      &::placeholder {
+        font-size: 2rem;
+        color: #fff;
+        opacity: 0.6;
+      }
+
+      font-size: 2rem;
+      color: #fff;
+
+      width: 100%;
+      text-align: left;
+
+      padding: 1rem 2rem;
+    }
+
+    span {
+      text-align: center;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+
+    padding: 0.5rem 3rem;
+
+    font-size: 2.1rem;
+    color: #fff;
+
+    opacity: 0.8;
+    transition: all 0.1s linear;
+
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(103%);
+    }
+  }
+}

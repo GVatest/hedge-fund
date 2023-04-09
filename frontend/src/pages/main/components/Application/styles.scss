@@ -1,0 +1,48 @@
+.application {
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__art {
+    width: 30rem;
+    position: relative;
+    transform: rotate(60deg);
+
+    z-index: -1;
+
+    @include respond(tab-port) {
+      width: 30rem;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+
+    &__ellipse {
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+
+      &_1 {
+        transform: translate(-50%, -75%) rotate(135deg);
+      }
+
+      &_2 {
+        transform: translate(-75%, -50%);
+      }
+
+      &_3 {
+        transform: translate(-25%, -50%) rotate(270deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.tools {
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    @include respond(phone) {
+      gap: 2.5rem;
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 30%;
+    min-width: 30rem;
+    height: 26.5rem;
+    max-width: 37rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 0.5rem;
+    overflow: hidden;
+
+    &__icon {
+      height: 7.5rem;
+    }
+
+    p {
+      font-size: $default-font-size;
+      text-align: center;
+    }
+
+    &__art {
+      width: 18rem;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: -1;
+
+      filter: blur(2px);
+    }
+  }
+}

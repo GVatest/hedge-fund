@@ -1,0 +1,75 @@
+.user {
+  &__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__wrapper {
+      width: 100%;
+
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      padding: 1rem;
+
+      background: linear-gradient(
+        152.97deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      );
+
+      font-size: $default-font-size;
+    }
+
+    &__value {
+      width: 100%;
+      text-align: center;
+      text-decoration: underline;
+      color: $accent;
+    }
+  }
+
+  &__cross {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    display: flex;
+    column-gap: 3rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      max-width: 10rem;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__withdraw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.5rem 3rem;
+
+    font-size: 2.1rem;
+    color: #fff;
+
+    opacity: 0.8;
+    transition: all 0.1s linear;
+
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(103%);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# Backend
+env
+db.sqlite3
+static
+
+# Frontend
+node_modules
+dist
+
+# Editor directories and files
+.DS_Store
