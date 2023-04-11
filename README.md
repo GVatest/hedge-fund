@@ -1,10 +1,8 @@
 <h1 align="center">𝕙𝕖𝕕𝕘𝕖-𝕗𝕦𝕟𝕕</h1>
 
-> Full stack web application web application for hedge fund with [React](https://legacy.reactjs.org/) frontend and [Django rest framework](https://www.django-rest-framework.org/) under the hood.
+> Full stack web application for hedge fund with [React](https://legacy.reactjs.org/) frontend and [Django rest framework](https://www.django-rest-framework.org/) under the hood.
 
 ## Screenshots
-<img width="1440" alt="Screenshot 2023-04-10 at 16 23 52" src="https://user-images.githubusercontent.com/66703210/230909283-b571106a-9da1-4358-ae6b-4a9fd8ea6d7b.png">
-<img width="1440" alt="Screenshot 2023-04-10 at 16 24 20" src="https://user-images.githubusercontent.com/66703210/230909317-f6ed11d2-6fd7-4542-8f80-d2e85c270062.png">
 
 ## Demo
 
@@ -75,6 +73,14 @@ npm run dev
 yarn dev
 ```
 
+## About
+
+- As data base `sqlite` was chosen, since it is quite easy to work with, and there were no plans for a large load on the project, so choosing any other, more advanced database, for example `postgresql`, didn't make sense.
+
+- Authorization is implemented using `JWT` tokens, this is a convenient, safe and universal solution.
+
+- The idea of ​​`Feature-Sliced ​​Design` is the basis for the architecture of the application frontend. The state manager is `Redux Toolkit` in conjunction with `RTK Query`. `Vite` is responsible for build and project workflow.
+
 ## Stack
 
 ### Frontend
@@ -86,14 +92,6 @@ yarn dev
 ### Backend
 
 <a href="https://www.django-rest-framework.org/"><img src="https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gra"></img></a>
-
-## About
-
-- As data base `sqlite` was chosen, since it is quite easy to work with, and there were no plans for a large load on the project, so choosing any other, more advanced database, for example `postgresql`, didn't make sense.
-
-- Authorization is implemented using `JWT` tokens, this is a convenient, safe and universal solution.
-
-- The idea of ​​`Feature-Sliced ​​Design` is the basis for the architecture of the application frontend. The state manager is `Redux Toolkit` in conjunction with `RTK Query`. `Vite` is responsible for build and project workflow.
 
 ## _Additional_
 
