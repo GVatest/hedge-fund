@@ -4,6 +4,9 @@
 
 ## Screenshots
 
+<img width="1440" alt="Screenshot 2023-04-10 at 16 23 52" src="https://user-images.githubusercontent.com/66703210/230909283-b571106a-9da1-4358-ae6b-4a9fd8ea6d7b.png">
+<img width="1440" alt="Screenshot 2023-04-10 at 16 24 20" src="https://user-images.githubusercontent.com/66703210/230909317-f6ed11d2-6fd7-4542-8f80-d2e85c270062.png">
+
 ## Demo
 
 https://hedge-fund.netlify.app/
